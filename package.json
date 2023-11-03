@@ -1,0 +1,45 @@
+{
+  "name": "fuzelaunch",
+  "version": "1.0.0",
+  "description": "A launcher made to join fuze events easly",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "rednix",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "electron": "^24.8.8"
+  },
+  "dependencies": {
+    "discord-urpc": "^1.0.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "minecraft-launcher-core": "^3.16.18",
+    "minecraft-player": "^1.0.1",
+    "msmc": "^4.1.0",
+    "node-unrar-js": "^2.0.0",
+    "unrar-promise": "^3.1.0",
+    "unzipper": "^0.10.14"
+  },
+  "build": {
+    "appId": "com.rednix.fuzelauncher",
+    "productName": "FuzeLauncher",
+    "win": {
+      "icon": "./icon.ico"
+    },
+    "mac": {
+      "icon": "./icon.icns"
+    },
+    "linux": {
+      "icon": "./icon.png"
+    }
+  }
+}

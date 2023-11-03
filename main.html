@@ -1,0 +1,95 @@
+<!-- Custom app frame -->
+<div class="custom-frame">
+  <div class="custom-frame-title">
+    <p class="custom-frame-title-text">FuzeLauncher</p>
+  </div>
+  <div class="custom-frame-btn">
+    <div class="custom-frame-btn-settings">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+        </path>
+        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+      </svg>
+    </div>
+    <div class="custom-frame-btn-minus">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M5 12l14 0"></path>
+      </svg>
+    </div>
+    <div class="custom-frame-btn-close">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24"
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 6l-12 12"></path>
+        <path d="M6 6l12 12"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- App content -->
+<div class="app" id="app">
+  <div class="main-logo" id="main-logo">
+    <span class="main-logo-text" id="main-logo-text">
+      <span style="color: #FF0000">Fuze</span>
+      <span style="color: white;">Launcher</span>
+    </span>
+  </div>
+
+  <div class="box" id="type">
+    <p class="title">TYPE</p>
+    <p class="subtitle">Clique sur "Vanilla" si il n'y a pas de mods à installer</p>
+    <div class="selector">
+      <div class="button-secondary" id="forge">
+        <img class="button-image"
+          src="https://fiverr-res.cloudinary.com/t_main1,q_auto,f_auto/gigs/294123339/original/8092155382089b939e0b0c2fb271e4772a3162d7.png"
+          alt="Forge Logo">
+        <p class="button-text-title">Forge</p>
+      </div>
+      <div class="button-secondary" id="vanilla">
+        <p class="button-text-title">Vanilla</p>
+      </div>
+      <div class="button-secondary" id="fabric">
+        <img class="button-image" src="https://avatars.githubusercontent.com/u/21025855?s=280&v=4" alt="Fabric Logo">
+        <p class="button-text-title">Fabric</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box" id="version">
+    <p class="title">Version</p>
+    <p class="subtitle">La version du serveur de l'event</p>
+    <input class="input" type="text" placeholder="Version Number" id="version-input">
+  </div>
+
+  <div class="box" id="mods">
+    <p class="title">Mods (<span id="numberOfMods">chargement...</span>)</p>
+    <p class="subtitle" id="mods-subtitle">Ajoute des mods si l'event en a besoin</p>
+    <div class="selector">
+      <div class="button-secondary" id="add">
+        <p class="button-text-title">+ Ajouter</p>
+        <input style="display: none;" type="file" id="file-input" accept=".jar,.zip,.rar">
+      </div>
+      <div class="button-secondary" id="clear">
+        <p class="button-text-title">Tout supprimer</p>
+      </div>
+      <div class="button-secondary" id="explorer">
+        <p class="button-text-title">Fichiers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box" id="launch">
+    <a class="button-primary" id="button-launch">Lancer</a>
+  </div>
+</div>
+<script src="./initialize.js"></script>
+<script src="./play.js"></script>

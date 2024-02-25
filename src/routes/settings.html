@@ -1,0 +1,154 @@
+
+    <!-- Custom app frame -->
+    <div class="custom-frame">
+      <div class="custom-frame-title">
+        <p class="custom-frame-title-text">FuzeLauncher</p>
+      </div>
+      <div class="custom-frame-btn">
+        <div class="custom-frame-btn-settings">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+         </svg>
+         </div>
+        <div class="custom-frame-btn-minus">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M5 12l14 0"></path>
+         </svg>
+        </div>
+        <div class="custom-frame-btn-close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- App content -->
+    <div class="app" id="app">
+      <div class="main-logo" id="main-logo">
+      <span class="main-logo-text" id="main-logo-text">
+        <span style="color: white;">Paramètres</span>
+      </span>
+      </div>
+
+      <div class="box" id="compte">
+      <p class="title">COMPTE</p>
+      <p class="subtitle">Les évents de Fuze n’acceptent pas les cracks</p>
+      <div class="selector">
+          <div class="button-secondary" id="microsoft">
+            <p class="button-text-title">Microsoft</p>
+          </div>
+          <div class="button-secondary" id="crack">
+            <p class="button-text-title">crack</p>
+          </div>
+        </div>
+        <input style="display: none;" class="input" type="text" placeholder="Username" id="username-input">
+      </div>
+
+      <div class="box" id="ram">
+        <p class="title">Ram</p>
+        <p class="subtitle">Laissez de la ram pour votre pc</p>
+        <div class="selector">
+          <div class="input-question">
+            <div class="input-question-block">
+              <p class="title">MIN</p>
+            </div>
+            <input id="minram" value="4" class="input" type="number">
+          </div>
+            <div class="input-question">
+              <div class="input-question-block">
+                <p class="title">MAX</p>
+              </div>
+              <input id="maxram" value="6" class="input" type="number">
+            </div>
+          </div>
+        </div>
+
+    <div class="box" id="game">
+      <p class="title">Jeu</p>
+      <div class="text-toggle">
+        <div class="sidetext">
+          <p class="subtitle" style="color: white">Luminosité à 1000.0%</p>
+          <p class="subtitle">Pour voir dans les caves, etc</p>
+        </div>
+        <div class="toggle" id="toggle-gamma" toggle-status="off">
+          <div class="moving-toggle toggle-off">
+            <p class="title" id="toggle-status">NON</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-toggle">
+        <div class="sidetext">
+          <p class="subtitle" style="color: white">Plein écran</p>
+          <p class="subtitle">Ouvrir en plein écran</p>
+        </div>
+        <div class="toggle" id="toggle-fullscreen" toggle-status="off">
+          <div class="moving-toggle toggle-off">
+            <p class="title" id="toggle-status">NON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" id="forgeSettings">
+      <p class="title">Forge</p>
+      <div class="text-toggle">
+        <div class="sidetext">
+          <p class="subtitle" style="color: white">Utiliser la dernière version</p>
+          <p class="subtitle">Non recommendé car moins stable</p>
+        </div>
+        <div class="toggle" id="toggle-lastforgeversion" toggle-status="off">
+          <div class="moving-toggle toggle-off">
+            <p class="title" id="toggle-status">NON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" id="fuzelauncher">
+      <p class="title">FUZELAUNCHER</p>
+      <div class="text-toggle">
+        <div class="sidetext">
+          <p class="subtitle" style="color: white">MagicCopy</p>
+          <p class="subtitle">CTRL + V pour MagicCopy </p>
+        </div>
+        <div class="toggle" id="toggle-magiccopy" toggle-status="off">
+          <div class="moving-toggle toggle-off">
+            <p class="title" id="toggle-status">NON</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-toggle">
+        <div class="sidetext">
+          <p class="subtitle" style="color: white">QuickLaunch</p>
+          <p class="subtitle">ENTER pour rapidement lancer</p>
+        </div>
+        <div class="toggle" id="toggle-quicklaunch" toggle-status="off">
+          <div class="moving-toggle toggle-off">
+            <p class="title" id="toggle-status">NON</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-toggle">
+        <div class="sidetext">
+          <p class="subtitle" style="color: white">Presence Discord</p>
+          <p class="subtitle">Faites appliquer puis CTRL + R</p>
+        </div>
+        <div class="toggle" id="toggle-discordpresence" toggle-status="off">
+          <div class="moving-toggle toggle-off">
+            <p class="title" id="toggle-status">NON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" id="save">
+      <a class="button-primary" id="button-launch">APPLIQUER</a>
+    </div>
+  </div>
+  <script src="../js/app.js"></script>

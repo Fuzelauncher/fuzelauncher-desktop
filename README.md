@@ -1,7 +1,7 @@
 
 ![banner-white](https://github.com/rednixfr/fuzelauncher/assets/81446406/aeafd023-c45f-4c77-939a-222e8da1d3dc)
 
-[![website](https://img.shields.io/badge/Site-fuzelauncher.netlify.app-red)]([https://discord.gg/electronjs](https://fuzelauncher.netlify.app/))
+[![website](https://img.shields.io/badge/Site-fuzelauncher.netlify.app-red)](https://fuzelauncher.netlify.app/)
 ![version](https://img.shields.io/badge/Version-ALPHA-white)
 
 **Launcher Minecraft pour rejoindre les évents facilement mais surtout rapidement**

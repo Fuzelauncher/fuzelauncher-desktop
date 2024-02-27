@@ -18,6 +18,8 @@
 ### 📚 Complet
 - Gérez vos comptes qu'ils soient premium ou crack facilement `soon`
 - Installez directement vos mods sans quitter le launcher grâce à l'API modrinth `soon`
+
+*Ce qui ne sera pas implémenté: la détection automatique d'évents. Nous préférons nous concentrer sur la stabilité ainsi que la vitesse de lancement du jeu. Si vous êtes intéréssé par la détection des évents, vous pouvez aller voir les projets [Communauté Events](https://github.com/Communaute-Events/AutoEvent/).*
 ## Interface
 ![interface](https://github.com/rednixfr/fuzelauncher/assets/81446406/46ac7e68-0e1b-4e91-93f8-a795140bafbf)
 
